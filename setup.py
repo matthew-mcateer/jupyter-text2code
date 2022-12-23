@@ -16,10 +16,7 @@ INSTALL_LIBS = [
     "matplotlib",
 ]
 
-if MODE and MODE.lower() == "cpu":
-    INSTALL_LIBS.append("faiss-cpu")
-else:
-    INSTALL_LIBS.append("faiss-gpu")
+INSTALL_LIBS.append("faiss-cpu")
 
 
 def get_serverextension_files():
